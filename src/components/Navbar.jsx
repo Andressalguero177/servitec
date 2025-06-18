@@ -22,6 +22,7 @@ const Navbar = () => {
       <ul className={`nav-links ${menuAbierto ? 'active' : ''}`}>
         <li><NavLink to="/" end onClick={() => setMenuAbierto(false)}>Inicio</NavLink></li>
         <li><NavLink to="/about" onClick={() => setMenuAbierto(false)}>About</NavLink></li>
+        <li><NavLink to="/contact" onClick={() => setMenuAbierto(false)}>Contact</NavLink></li>
       </ul>
     </nav>
   )

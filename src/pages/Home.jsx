@@ -14,6 +14,9 @@ function Home() {
 
                 <h2>Somos <span class="color-acento">servitec!</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+                <br />
+                <br />
+                <button>About us</button>
             </div>
         </div>
         </div>
