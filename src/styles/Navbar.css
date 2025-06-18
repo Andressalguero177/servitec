@@ -18,6 +18,11 @@
   text-decoration: none;
 }
 
+.logo img {
+  
+  width: 60px;
+}
+
 /* Enlaces */
 .nav-links {
   display: flex;

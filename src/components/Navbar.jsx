@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import '../styles/Navbar.css'
+import logo from '../assets/log.jpg'
+
 
 const Navbar = () => {
   const [menuAbierto, setMenuAbierto] = useState(false)
@@ -11,7 +13,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">MiTienda</Link>
+      <Link to="/" className="logo">
+        <img src={logo} alt="" />
+      </Link>
 
       <div className={`menu-toggle ${menuAbierto ? 'open' : ''}`} onClick={toggleMenu}>
         <span></span>
