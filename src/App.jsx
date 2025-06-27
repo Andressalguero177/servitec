@@ -6,6 +6,8 @@ import './App.css'
 
 import Navbar from './components/Navbar'
 import AppRouter from './router/AppRouter'
+import Footer from './components/Footer'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +17,7 @@ function App() {
     <>
       <Navbar />
       <AppRouter />
+      <Footer />
     </>
       
 

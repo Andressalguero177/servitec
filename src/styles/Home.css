@@ -4,9 +4,9 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 30vh;
+    height: 40vh;
     padding: 40px;
-    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hornos-industriales.jpeg");
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -23,6 +23,21 @@
     font-size: 20px;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn button {
+    padding: 12px 70px
+}
+
 button {
     font-size: 1.25em;
     padding: 10px 40px;
@@ -35,10 +50,10 @@ button {
 }
 
 button:hover {
-    background-color: #4ad5cb;
+    background-color: #4AD5CB;
     color: black;
     border: 1px solid white;
-    box-shadow: 2px 2px 10px #4ad5cb;
+    box-shadow: 2px 2px 10px #4AD5CB;
     transform: scale(1.05);
     /* agrandamiento breve */
 }
@@ -49,81 +64,74 @@ button:hover {
 }
 
 #nuestros-programas {
+    background-color: #4AD5CB;
+    /* azul profundo */
     color: white;
     text-align: center;
 }
 
 #nuestros-programas .container {
-    padding: 10px 12px 150px 12px;
+    padding: 100px 12px;
 }
 
 #nuestros-programas h2 {
-    margin-top: 0;
     font-size: 3.2em;
-    color: black;
-}
-
-#nuestros-programas p {
-    color: black;
+    margin-top: 0;
 }
 
 #nuestros-programas p {
     display: none;
 }
 
+#nuestros-programas .programas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 #nuestros-programas .carta {
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
+    background: #f8f9fa;
+    /* gris claro */
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #444;
+    /* texto gris medio */
 }
 
 #nuestros-programas .carta:hover {
-    box-shadow: 4px 4px 20px #4ad5cb;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-#nuestros-programas .carta h3 {
-    color: white;
+.icono-servicio {
+    font-size: 2.5rem;
+    color: #4AD5CB;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
 }
 
-#nuestros-programas .carta p {
-    color: white;
+.carta:hover .icono-servicio {
+    transform: rotate(5deg) scale(1.1);
 }
 
-.carta:first-child {
-    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hornos-industriales.jpeg");
+.carta h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #222;
 }
 
-.carta:nth-child(2) {
-    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hornos-industriales.jpeg");
-}
-
-.carta:nth-child(3) {
-    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hornos-industriales.jpeg");
-}
-
-footer {
-    background-color: rgb(230, 230, 230);
-}
-
-footer p {
-    margin: 0;
-    padding: 12px;
-    color: rgb(100, 100, 100);
-}
-
-footer .container {
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+.carta p {
+    font-size: 0.95rem;
+    color: #555;
 }
 
 @media (min-width: 850px) {
-    #hero {
-        height: 25Vh;
-    }
     #somos-proya .container {
         display: flex;
         justify-content: space-evenly;
@@ -143,17 +151,28 @@ footer .container {
     #somos-proya h2 {
         margin-top: 0px;
     }
+    .btn button {
+        padding: 15px 100px
+    }
     #somos-proya .img-container {
-        background-image: url("../assets/hornos-industriales.jpeg");
+        background-image: url("../assets/2.jpg");
         background-size: cover;
         background-position: center center;
         height: 300px;
         width: 400px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
     }
-    #nuestros-programas .programas {
-        display: flex;
-        justify-content: center;
+    .img-container1 {
+        background-image: url("../assets/horno-rational.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    }
+    #nuestros-programas {
+        height: 70vh;
+        display: block;
     }
     #nuestros-programas p {
         display: block;
@@ -162,24 +181,8 @@ footer .container {
     #nuestros-programas h2 {
         font-size: 4em;
     }
-    #nuestros-programas h3 {
-        margin-top: 0;
-    }
     #nuestros-programas .carta {
         padding: 50px;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        /* background-color: rgba(50, 50, 50, 1); */
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    }
-    .carta:first-child {
-        background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hornos-industriales.jpeg");
-    }
-    .carta:nth-child(2) {
-        background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hornos-industriales.jpeg");
-    }
-    .carta:nth-child(3) {
-        background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hornos-industriales.jpeg");
     }
     footer .container {
         justify-content: flex-end;
@@ -187,9 +190,6 @@ footer .container {
 }
 
 @media (min-width: 1400px) {
-    #hero {
-        height: 25Vh;
-    }
     #hero p {
         font-size: 20px;
         padding: 0 300px;
@@ -198,4 +198,55 @@ footer .container {
     #nuestros-programas .container {
         padding: 0 200px;
     }
+}
+
+h2 {
+    font-size: clamp(20px, 2vw + 1rem, 32px);
+    margin-bottom: clamp(12px, 2vw, 24px);
+}
+
+p {
+    font-size: clamp(13px, 1vw + 0.5rem, 17px);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.programas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.carta {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icono-servicio {
+    font-size: 2.5rem;
+    color: #4AD5CB;
+    margin-bottom: 1rem;
+}
+
+.carta h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #222;
+}
+
+.carta p {
+    font-size: 0.95rem;
+    color: #555;
 }
